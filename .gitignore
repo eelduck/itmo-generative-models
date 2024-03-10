@@ -163,3 +163,7 @@ cython_debug/
 .python-version
 
 avatars/
+
+dataset/
+
+wandb/
