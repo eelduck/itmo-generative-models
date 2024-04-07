@@ -20,7 +20,8 @@
 ## Решение
 
 ### DCGAN CSPup 128x128
-Решение находится в ноутбуке [notebooks/dcgan-csp.ipynb](notebooks/dcgan-csp.ipynb)
+Бейзлайн архитектура находится в ноутбуке [notebooks/dcgan-csp-baseline.ipynb](notebooks/dcgan-csp-baseline.ipynb)
+Улучшенное решение находится в ноутбуке [notebooks/dcgan-csp.ipynb](notebooks/dcgan-csp.ipynb)
 
 Бейзлайн архитектура соответствует требуемой в задании, помимо этого добавлены:
 - BatchNorm для всех блоков GAN
