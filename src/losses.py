@@ -71,9 +71,8 @@ class ArcfaceLoss(nn.Module):
         self.cosin_loss = nn.CosineSimilarity(dim=1, eps=1e-6)
 
     def forward(self, source, synth):
-
-        source = F.interpolate(source,size=(112,112), mode='bicubic')
-        synth = F.interpolate(synth,size=(112,112), mode='bicubic')
+        source = F.interpolate(source, size=(112, 112), mode="bicubic")
+        synth = F.interpolate(synth, size=(112, 112), mode="bicubic")
 
         emb1 = self.arcnet(source)
         emb2 = self.arcnet(synth)
