@@ -176,7 +176,7 @@ controlnet_conditioning_scale = 0.55
 
 Оригинал | Canny | Промпт
 -------- | ----- | ------
-![alt text](image-2.png) | ![alt text](image-3.png) | ![alt text](image-4.png)
+![alt text](readme_imgs/image-2.png) | ![alt text](readme_imgs/image-3.png) | ![alt text](readme_imgs/image-4.png)
 
 Не так похоже на Джессику Альбу, как при обычной генерации, но какие-то черты улыбки и глаз присутствуют
 
