@@ -149,3 +149,38 @@ Office | Forest | Beach
 В целом тоже получилось неплохо, но всё же __хуже, чем полноценное дообучение__
 
 ## ControlNet
+
+В качестве базовой модели взял дообученную полностью модель, т.к. она показала наилучшие результаты
+
+### Canny Model
+
+Для Canny модели использовал картину __Девушка с жемчужной сережкой__
+
+Промпт: 
+```python
+{
+     "name": "gir_with_pearl_earring",
+     "prompt": "close up portrait of smiling sks woman, red carpet, 4K, raw, hrd, hd, high quality, realism, sharp focus",
+     "n_prompt": "monochrome, lowres, bad anatomy, worst quality, low quality, naked, nsfw, deformed, distorted, disfigured, poorly drawn, bad anatomy, extra limb, missing limb, floating limbs, mutated hands disconnected limbs, mutation, ugly, blurry, amputation"
+}
+```
+
+Параметры генерации:
+```python
+seed = 147525234
+num_samples = 1
+guidance_scale = 6
+num_inference_steps = 35
+controlnet_conditioning_scale = 0.55
+```
+
+Оригинал | Canny | Промпт
+-------- | ----- | ------
+![alt text](image-2.png) | ![alt text](image-3.png) | ![alt text](image-4.png)
+
+Не так похоже на Джессику Альбу, как при обычной генерации, но какие-то черты улыбки и глаз присутствуют
+
+
+
+
+
